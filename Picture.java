@@ -64,7 +64,7 @@ public class Picture
         suelo.changeSize(1400);
         suelo.makeVisible();
 
-        sun.slowMoveVertical(110);
+        
     }
 
     /**
@@ -92,6 +92,21 @@ public class Picture
             window.changeColor("black");
             roof.changeColor("green");
             sun.changeColor("yellow");
+        }
+    }
+    /**
+     * move sun
+     */
+    public void moveSun()
+    {
+        if (wall != null)   // only if it's painted already...
+        {
+            sun.slowMoveVertical(110);
+            suelo.changeColor("black");
+            roof.changeColor("black");
+            wall.changeColor("black");
+            window.changeColor("white");
+          
         }
     }
 }
