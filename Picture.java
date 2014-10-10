@@ -55,16 +55,16 @@ public class Picture
         sun.moveVertical(-40);
         sun.changeSize(80);
         sun.makeVisible();
-        sun.slowMoveVertical(140);
+        
         
         sun2 = new Circle();
         sun2.changeColor("green");
         sun2.moveVertical(150);
-        sun2.moveHorizontal(-650);
+        sun2.moveHorizontal(-680);
         sun2.changeSize(1400);
         sun2.makeVisible();
 
-        
+        sun.slowMoveVertical(110);
     }
 
     /**
