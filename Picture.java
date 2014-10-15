@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Circle suelo;
+    private Person andante;
 
     /**
      * Constructor for objects of class Picture
@@ -106,6 +107,21 @@ public class Picture
             roof.changeColor("black");
             wall.changeColor("black");
             window.changeColor("white");
+          
+        }
+    }
+    /**
+     * Persona andante
+     */
+    public void andante()
+    {
+        if (wall != null)   // only if it's painted already...
+        {
+            andante = new Person();
+            andante.moveVertical(20);
+            andante.moveHorizontal(-300);
+            andante.makeVisible();
+            andante.slowMoveHorizontal(150);  
           
         }
     }
